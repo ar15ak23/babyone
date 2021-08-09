@@ -30,11 +30,7 @@ window.addEventListener('DOMContentLoaded', function(){
          //   scene,
         BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s/7btc686rzyohvv5/", "d.glb", scene,
             function (mesh) { 
-            for (var i = 0; i < mesh.length; i++){
-console.log(mesh[i].name);
-mesh[i].scaling = new BABYLON.Vector3 (1,1,1);
-mesh[1].rotation = new BABYLON.Vector3(0, 45, 0);
-      }; 
+            
          
     
        chair = mesh[0].getChildTransformNodes(false)[0];
