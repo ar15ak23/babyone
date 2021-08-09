@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', function(){
         var index = 0; 
     
         var scene = new BABYLON.Scene(engine);
+        scene.clearColor = new BABYLON.Color3(0.9, 0.9, 0.9);
         var camera = new BABYLON.ArcRotateCamera("cam", Math.PI/2, Math.PI / 2, 3, new BABYLON.Vector3(0,0.5,0));
         var light = new BABYLON.HemisphericLight("sun", new BABYLON.Vector3(0,1,0), scene);
         var anchor = new BABYLON.TransformNode("");
@@ -24,10 +25,10 @@ window.addEventListener('DOMContentLoaded', function(){
         
         let chair;
       //  BABYLON.SceneLoader.ImportMesh(
-        //  https://www.dropbox.com/s/3kn7ulznxspc15d/modeDraco.glb?dl=0
+        //  https:https://www.dropbox.com/s/3d133vh4pt3z73o/abc.glb?dl=0
         //   "./table.glb",
          //   scene,
-        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s//3kn7ulznxspc15d/", "modeDraco.glb", scene,
+        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s//3d133vh4pt3z73o/", "abc.glb", scene,
             function (mesh) { 
                 chair = mesh[0].getChildTransformNodes(false)[0];
                mesh.rotation = new BABYLON.Vector3(0, 180, 0);
