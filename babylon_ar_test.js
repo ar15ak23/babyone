@@ -25,10 +25,10 @@ window.addEventListener('DOMContentLoaded', function(){
         
         let chair;
       //  BABYLON.SceneLoader.ImportMesh(
-        //  https:https://www.dropbox.com/s/3d133vh4pt3z73o/abc.glb?dl=0
+        //  https:https:https://www.dropbox.com/s/1lrj18ye8hzr668/jm.glb?dl=0
         //   "./table.glb",
          //   scene,
-        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s//3d133vh4pt3z73o/", "abc.glb", scene,
+        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s//1lrj18ye8hzr668/", "jm.glb", scene,
             function (mesh) { 
                 chair = mesh[0].getChildTransformNodes(false)[0];
                mesh.rotation = new BABYLON.Vector3(0, 180, 0);
