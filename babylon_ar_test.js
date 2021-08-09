@@ -39,9 +39,6 @@ mesh[i].scaling = new BABYLON.Vector3 (5,5,5);
      
                 chair.isVisible = false;
           
-
-      }; 
-   
             
         });
     
