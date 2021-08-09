@@ -32,7 +32,11 @@ window.addEventListener('DOMContentLoaded', function(){
             function (mesh) { 
                 chair = mesh[0].getChildTransformNodes(false)[0];
                mesh.rotation = new BABYLON.Vector3(0, 180, 0);
-             mesh[i].scaling = new BABYLON.Vector3 (53,53,53);
+            for (var i = 0; i < mesh.length; i++){
+console.log(mesh[i].name);
+mesh[i].scaling = new BABYLON.Vector3 (5,5,5);
+
+      }; 
                 chair.isVisible = false;
           
 
