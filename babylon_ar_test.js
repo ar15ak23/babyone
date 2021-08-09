@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function(){
 console.log(mesh[i].name);
 mesh[i].scaling = new BABYLON.Vector3 (5,5,5);
 
-      }; 
+    
        chair = mesh[0].getChildTransformNodes(false)[0];
                mesh.rotation = new BABYLON.Vector3(0, 180, 0);
             
