@@ -33,6 +33,13 @@ window.addEventListener('DOMContentLoaded', function(){
                 chair = mesh[0].getChildTransformNodes(false)[0];
                mesh.rotation = new BABYLON.Vector3(0, 180, 0);
                 chair.isVisible = false;
+            for (var i = 0; i < meshes.length; i++){
+console.log(meshes[i].name);
+meshes[i].scaling = new BABYLON.Vector3 (5,5,5);
+
+      }; 
+   
+            
         });
     
         // var xr = await scene.createDefaultXRExperienceAsync({floorMeshes: []})
