@@ -25,10 +25,10 @@ window.addEventListener('DOMContentLoaded', function(){
         
         let chair;
       //  BABYLON.SceneLoader.ImportMesh(
-        // https://www.dropbox.com/s/n2qrarilixg0u77/0145.fbx?dl=0
+        //https://www.dropbox.com/s/yp75pfkv2mbqio0/add.glb?dl=0
         //   "./table.glb",
          //   scene,
-        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s/n2qrarilixg0u77/", "0145.glb", scene,
+        BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s/n2qrarilixg0u77/", "add.glb", scene,
             function (mesh) { 
              for (var i = 0; i < mesh.length; i++){
 console.log(mesh[i].name);
