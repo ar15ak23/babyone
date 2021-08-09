@@ -30,17 +30,22 @@ window.addEventListener('DOMContentLoaded', function(){
          //   scene,
         BABYLON.SceneLoader.ImportMesh("", "https://dl.dropbox.com/s//1lrj18ye8hzr668/", "jm.glb", scene,
             function (mesh) { 
-                chair = mesh[0].getChildTransformNodes(false)[0];
-               mesh.rotation = new BABYLON.Vector3(0, 180, 0);
-            for (var i = 0; i < mesh.length; i++){
+             for (var i = 0; i < mesh.length; i++){
 console.log(mesh[i].name);
 mesh[i].scaling = new BABYLON.Vector3 (5,5,5);
 
-     
-                chair.isVisible = false;
-          
+      }; 
+       chair = mesh[0].getChildTransformNodes(false)[0];
+               mesh.rotation = new BABYLON.Vector3(0, 180, 0);
             
+            
+            
+            
+            
+                chair.isVisible = false;
+
         });
+    
     
         // var xr = await scene.createDefaultXRExperienceAsync({floorMeshes: []})
         // // default is vr, change to ar
