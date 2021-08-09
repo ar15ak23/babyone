@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', function(){
                 chair.isVisible = false;
             for (var i = 0; i < meshes.length; i++){
 console.log(meshes[i].name);
-meshes[i].scaling = new BABYLON.Vector3 (5,5,5);
+meshes[i].scaling = new BABYLON.Vector3 (15,15,15);
 
       }; 
    
