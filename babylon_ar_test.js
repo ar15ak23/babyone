@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function(){
         var index = 0; 
     
         var scene = new BABYLON.Scene(engine);
-        scene.clearColor = new BABYLON.Color3(0.9, 0.9, 0.9);
+        scene.clearColor = new BABYLON.Color3(255, 255, 255);
         var camera = new BABYLON.ArcRotateCamera("cam", Math.PI/2, Math.PI / 2, 3, new BABYLON.Vector3(0,0.5,0));
         var light = new BABYLON.HemisphericLight("sun", new BABYLON.Vector3(0,1,0), scene);
         var anchor = new BABYLON.TransformNode("");
@@ -33,9 +33,9 @@ window.addEventListener('DOMContentLoaded', function(){
             for (var i = 0; i < mesh.length; i++){
 console.log(mesh[i].name);
 mesh[i].scaling = new BABYLON.Vector3 (3,3,3);
-
+mesh[1].rotation = new BABYLON.Vector3(0, 45, 0);
       }; 
-          mesh.rotation = new BABYLON.Vector3(0, 40, 0);
+         
     
        chair = mesh[0].getChildTransformNodes(false)[0];
               
