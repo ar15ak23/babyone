@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function(){
             function (mesh) { 
             for (var i = 0; i < mesh.length; i++){
 console.log(mesh[i].name);
-mesh[i].scaling = new BABYLON.Vector3 (5,5,5);
+mesh[i].scaling = new BABYLON.Vector3 (2,2,2);
 
       }; 
 
